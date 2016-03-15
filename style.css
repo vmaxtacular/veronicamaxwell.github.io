@@ -1,343 +1,1 @@
-@font-face {
-	font-family: 'et-line';
-	src:url('fonts/et-line.eot');
-	src:url('fonts/et-line.eot?#iefix') format('embedded-opentype'),
-		url('fonts/et-line.woff') format('woff'),
-		url('fonts/et-line.ttf') format('truetype'),
-		url('fonts/et-line.svg#et-line') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-/* Use the following CSS code if you want to use data attributes for inserting your icons */
-[data-icon]:before {
-	font-family: 'et-line';
-	content: attr(data-icon);
-	speak: none;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	display:inline-block;
-}
-
-/* Use the following CSS code if you want to have a class per icon */
-/*
-Instead of a list of all class selectors,
-you can use the generic selector below, but it's slower:
-[class*="icon-"] {
-*/
-.icon-mobile, .icon-laptop, .icon-desktop, .icon-tablet, .icon-phone, .icon-document, .icon-documents, .icon-search, .icon-clipboard, .icon-newspaper, .icon-notebook, .icon-book-open, .icon-browser, .icon-calendar, .icon-presentation, .icon-picture, .icon-pictures, .icon-video, .icon-camera, .icon-printer, .icon-toolbox, .icon-briefcase, .icon-wallet, .icon-gift, .icon-bargraph, .icon-grid, .icon-expand, .icon-focus, .icon-edit, .icon-adjustments, .icon-ribbon, .icon-hourglass, .icon-lock, .icon-megaphone, .icon-shield, .icon-trophy, .icon-flag, .icon-map, .icon-puzzle, .icon-basket, .icon-envelope, .icon-streetsign, .icon-telescope, .icon-gears, .icon-key, .icon-paperclip, .icon-attachment, .icon-pricetags, .icon-lightbulb, .icon-layers, .icon-pencil, .icon-tools, .icon-tools-2, .icon-scissors, .icon-paintbrush, .icon-magnifying-glass, .icon-circle-compass, .icon-linegraph, .icon-mic, .icon-strategy, .icon-beaker, .icon-caution, .icon-recycle, .icon-anchor, .icon-profile-male, .icon-profile-female, .icon-bike, .icon-wine, .icon-hotairballoon, .icon-globe, .icon-genius, .icon-map-pin, .icon-dial, .icon-chat, .icon-heart, .icon-cloud, .icon-upload, .icon-download, .icon-target, .icon-hazardous, .icon-piechart, .icon-speedometer, .icon-global, .icon-compass, .icon-lifesaver, .icon-clock, .icon-aperture, .icon-quote, .icon-scope, .icon-alarmclock, .icon-refresh, .icon-happy, .icon-sad, .icon-facebook, .icon-twitter, .icon-googleplus, .icon-rss, .icon-tumblr, .icon-linkedin, .icon-dribbble {
-	font-family: 'et-line';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	display:inline-block;
-}
-.icon-mobile:before {
-	content: "\e000";
-}
-.icon-laptop:before {
-	content: "\e001";
-}
-.icon-desktop:before {
-	content: "\e002";
-}
-.icon-tablet:before {
-	content: "\e003";
-}
-.icon-phone:before {
-	content: "\e004";
-}
-.icon-document:before {
-	content: "\e005";
-}
-.icon-documents:before {
-	content: "\e006";
-}
-.icon-search:before {
-	content: "\e007";
-}
-.icon-clipboard:before {
-	content: "\e008";
-}
-.icon-newspaper:before {
-	content: "\e009";
-}
-.icon-notebook:before {
-	content: "\e00a";
-}
-.icon-book-open:before {
-	content: "\e00b";
-}
-.icon-browser:before {
-	content: "\e00c";
-}
-.icon-calendar:before {
-	content: "\e00d";
-}
-.icon-presentation:before {
-	content: "\e00e";
-}
-.icon-picture:before {
-	content: "\e00f";
-}
-.icon-pictures:before {
-	content: "\e010";
-}
-.icon-video:before {
-	content: "\e011";
-}
-.icon-camera:before {
-	content: "\e012";
-}
-.icon-printer:before {
-	content: "\e013";
-}
-.icon-toolbox:before {
-	content: "\e014";
-}
-.icon-briefcase:before {
-	content: "\e015";
-}
-.icon-wallet:before {
-	content: "\e016";
-}
-.icon-gift:before {
-	content: "\e017";
-}
-.icon-bargraph:before {
-	content: "\e018";
-}
-.icon-grid:before {
-	content: "\e019";
-}
-.icon-expand:before {
-	content: "\e01a";
-}
-.icon-focus:before {
-	content: "\e01b";
-}
-.icon-edit:before {
-	content: "\e01c";
-}
-.icon-adjustments:before {
-	content: "\e01d";
-}
-.icon-ribbon:before {
-	content: "\e01e";
-}
-.icon-hourglass:before {
-	content: "\e01f";
-}
-.icon-lock:before {
-	content: "\e020";
-}
-.icon-megaphone:before {
-	content: "\e021";
-}
-.icon-shield:before {
-	content: "\e022";
-}
-.icon-trophy:before {
-	content: "\e023";
-}
-.icon-flag:before {
-	content: "\e024";
-}
-.icon-map:before {
-	content: "\e025";
-}
-.icon-puzzle:before {
-	content: "\e026";
-}
-.icon-basket:before {
-	content: "\e027";
-}
-.icon-envelope:before {
-	content: "\e028";
-}
-.icon-streetsign:before {
-	content: "\e029";
-}
-.icon-telescope:before {
-	content: "\e02a";
-}
-.icon-gears:before {
-	content: "\e02b";
-}
-.icon-key:before {
-	content: "\e02c";
-}
-.icon-paperclip:before {
-	content: "\e02d";
-}
-.icon-attachment:before {
-	content: "\e02e";
-}
-.icon-pricetags:before {
-	content: "\e02f";
-}
-.icon-lightbulb:before {
-	content: "\e030";
-}
-.icon-layers:before {
-	content: "\e031";
-}
-.icon-pencil:before {
-	content: "\e032";
-}
-.icon-tools:before {
-	content: "\e033";
-}
-.icon-tools-2:before {
-	content: "\e034";
-}
-.icon-scissors:before {
-	content: "\e035";
-}
-.icon-paintbrush:before {
-	content: "\e036";
-}
-.icon-magnifying-glass:before {
-	content: "\e037";
-}
-.icon-circle-compass:before {
-	content: "\e038";
-}
-.icon-linegraph:before {
-	content: "\e039";
-}
-.icon-mic:before {
-	content: "\e03a";
-}
-.icon-strategy:before {
-	content: "\e03b";
-}
-.icon-beaker:before {
-	content: "\e03c";
-}
-.icon-caution:before {
-	content: "\e03d";
-}
-.icon-recycle:before {
-	content: "\e03e";
-}
-.icon-anchor:before {
-	content: "\e03f";
-}
-.icon-profile-male:before {
-	content: "\e040";
-}
-.icon-profile-female:before {
-	content: "\e041";
-}
-.icon-bike:before {
-	content: "\e042";
-}
-.icon-wine:before {
-	content: "\e043";
-}
-.icon-hotairballoon:before {
-	content: "\e044";
-}
-.icon-globe:before {
-	content: "\e045";
-}
-.icon-genius:before {
-	content: "\e046";
-}
-.icon-map-pin:before {
-	content: "\e047";
-}
-.icon-dial:before {
-	content: "\e048";
-}
-.icon-chat:before {
-	content: "\e049";
-}
-.icon-heart:before {
-	content: "\e04a";
-}
-.icon-cloud:before {
-	content: "\e04b";
-}
-.icon-upload:before {
-	content: "\e04c";
-}
-.icon-download:before {
-	content: "\e04d";
-}
-.icon-target:before {
-	content: "\e04e";
-}
-.icon-hazardous:before {
-	content: "\e04f";
-}
-.icon-piechart:before {
-	content: "\e050";
-}
-.icon-speedometer:before {
-	content: "\e051";
-}
-.icon-global:before {
-	content: "\e052";
-}
-.icon-compass:before {
-	content: "\e053";
-}
-.icon-lifesaver:before {
-	content: "\e054";
-}
-.icon-clock:before {
-	content: "\e055";
-}
-.icon-aperture:before {
-	content: "\e056";
-}
-.icon-quote:before {
-	content: "\e057";
-}
-.icon-scope:before {
-	content: "\e058";
-}
-.icon-alarmclock:before {
-	content: "\e059";
-}
-.icon-refresh:before {
-	content: "\e05a";
-}
-.icon-happy:before {
-	content: "\e05b";
-}
-.icon-sad:before {
-	content: "\e05c";
-}
-.icon-facebook:before {
-	content: "\e05d";
-}
-.icon-twitter:before {
-	content: "\e05e";
-}
-.icon-googleplus:before {
-	content: "\e05f";
-}
-.icon-rss:before {
-	content: "\e060";
-}
-.icon-tumblr:before {
-	content: "\e061";
-}
-.icon-linkedin:before {
-	content: "\e062";
-}
-.icon-dribbble:before {
-	content: "\e063";
-}
+body{	font-family: 'Quicksand', sans-serif;}p{	font-family: 'Quicksand', sans-serif;}a{	font-family: 'Quicksand', sans-serif;	text-decoration: none;}h1, h2, h3, h4, h5, h6{	font-family: 'Quicksand', sans-serif;}/*Header*/   .navbar-default .navbar-nav>li>a {	color: #fff;	text-transform: uppercase;	font-size: 18px;}.navbar-default .navbar-nav>li>a:hover{	color: #F7882F;}header{	background: url(../images/foodCodeProfileKnives.jpg);	background-size: cover;	background-repeat: no-repeat;}.section_overlay{	background: rgba(250,250,250, 0); }.home_text{	padding-top: 210px;	padding-bottom: 210px;}.home_text h2{	color: #0A1612;	font-size: 16vh;	position: relative;	letter-spacing: -5px;	width: 100%;}.home_text p{	color: #0A1612;	font-size: 27px;	/*text-transform: uppercase;*/}.home_text img{}.scroll_down{	padding-bottom: 70px;}.scroll_down h4{	font-size: 12px;	color: #000;	font-family: 'Quicksand', sans-serif;	/*text-transform: uppercase;*/}/*Services*/.services{	padding-top: 96px;	background-color: #eee;}.services .container{	border-bottom: 1px solid #ddd;}.single_service{	padding-bottom: 96px;}.single_service img{	font-size: 30px;	color: rgb(220,53,34);}.single_service h2{	color: #000000;	font-size: 25px;	text-transform: uppercase;}.single_service p{	color: #404040;	font-size: 14px;}.single_progress_bar .progress {height: 10px;margin-bottom: 30px;overflow: hidden;background-color: #d5d5d5;border-radius: 0px;-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);box-shadow: inset 0 1px 2px rgba(0,0,0,.1);}.single_progress_bar .progress-bar {background-color: #F7882F;}.single_progress_bar h2{	color: #0D475B;	font-size: 25px;	font-weight: 400;	text-transform: uppercase;}.single_progress_bar h4{	color: #0D475B;	font-size: 15px;	font-weight: 400;	text-transform: uppercase;}.about_title h1{	font-size: 30px;	color: #3d3d3d;	text-transform: uppercase;	margin-top: 85px;	letter-spacing: 6px;	margin-bottom: 21px;}.about_title img{	margin-bottom: 20px;}.about_title h4{	font-size: 18px;	margin-bottom: 80px;}.about_us_area p{	font-size: 20px;	border-style: solid;	border-color: #6B7A8F;	padding: 20px;	text-decoration: none;}.single_image{	margin-right: 3px;	position: relative;	transition: all 1s;}.single_image img{	width: 100%;	padding: 15px;}.single_image:hover div.image_overlay{	opacity: .9;}.image_overlay{position: absolute;width: 100%;height: 100%;background: #F7882F;left: 0;top: 0;opacity: 0;	transition: all .5s;	}.image_overlay a{position: absolute;top: 20px;right: 20px; color: #fff;text-decoration: none;font-size: 20px;border-style: double;padding: 5px;/*text-transform: uppercase;	*/}.image_overlay h2{position: absolute;bottom: 28px;left: 20px;font-size: 25px bold;color: #0A1612;opacity: 1;text-transform: uppercase;letter-spacing: 3px;	}.no_padding{	padding-left: 0px;	padding-right: 0px;}.work_title{}.work_title h1{	font-size: 30px;	color: #000;	letter-spacing: 5px;	padding-top: 150px;	text-transform: uppercase; 	margin-bottom: 20px;} .contact_title h1{	font-size: 30px;	color: #fff;	letter-spacing: 5px;	padding-top: 100px;	text-transform: uppercase; 	margin-bottom: 20px;}.work_title img, .contact_title img{	margin-bottom: 20px;}.work_title p{	font-size: 18px;	color: #000;	margin-bottom: 80px;} .contact_title p{	font-size: 18px;	color: #fff;	margin-bottom: 50px;}.last_padding {	padding-right: 0px;}.pad_top {	padding-top: 2px;}.left h2{	margin-top: 60px;	margin-bottom: 20px;	font-size: 18px;	color: #0A1612;	font-weight: bold;}.left p{	margin-bottom: 60px;	font-size: 14px;	color: #0A1612;}.baton{	margin-top: 65px;}.cs-btn, .cs-btn:active, .cs-btn:visited, .cs-btn:focus{	color: #fff;	background-color: #000;	border-radius: 0px;	outline: none;	padding: 10px 40px;	text-transform: uppercase;	letter-spacing: 2px;	transition: all 1s;}.cs-btn:hover{	background: #f74d65;	border-color: #f74d65;}.call_to_action .container{	padding-bottom: 60px;	border-bottom: 1px solid #ddd;}/*Contact*/.contact_title h1{	font-size: 30px;	text-transform: uppercase;}.contact-form{padding: 30px;}.contact-form .form-control{height: 43px;border-radius: 0px;margin-bottom: 20px;border: 1px solid ##6B7A8F;}.contact-form #message{	height: 104px;}.form_submit{width: 100%;background: #F7882F;border-radius: 0px;color: #fff;padding-top: 13px;padding-bottom: 10px;transition: all .5s;	}.form_submit a{	color: #fff;	text-decoration: none;	text-transform: uppercase;	font-size: 20px;}section.contact{	background-color: #687A8F;}/*Footer*/footer{	background-color: #fff;	padding-top: 10px;	padding-bottom: 30px;}.footer_logo{}.footer_logo img{}.social{	padding-top: 10px;}.social h2{text-transform: uppercase;font-size: 16px;	color: #0A1612;}ul.icon_list{margin: 0;padding: 0;list-style: none;text-align: center;margin-top: 20px;}ul.icon_list li{display: inline;padding-left: 12px;padding-right: 12px;}ul.icon_list li a{display: inline-block;color: #0A1612;text-align: center;width: 30px;height: 30px;text-align: center;line-height: 28px;transition: all 1s;}ul.icon_list li a:hover{	color: #F7882F;	border-color:#f73b56; } .copyright_text{padding-top: 10px;	}.copyright_text p{color: #0A1612;font-size: 14px;/*text-transform: uppercase; */margin-bottom: 0px;letter-spacing: 0px;}.copyright_text a{	color:#f73b56;	/*text-transform:uppercase;*/	font-weight:700;	text-decoration:none;	}.copyright_text img{	max-height: 30px;}	
