@@ -62,11 +62,19 @@
 	                  <a class="navbar-brand" href="#"><img src="" alt=""></a>
 	                </div>
 
+                    <script type="text/javascript">
+                        $(document).on('click','.navbar-collapse.in',function(e) {
+                            if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
+                        $(this).collapse('hide');
+                            }
+                        });
+
+                    </script>
+
 	                <!-- Collect the nav links, forms, and other content for toggling -->
 	                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	                  <ul class="nav navbar-nav navbar-right">
 	                    <li><a href="#HOME">Home</a></li>
-	                    <!--<li><a href="#SERVICE">Services</a></li> -->
 	                    <li><a href="#SERVICES">Skills</a></li>
 	                    <li><a href="#WORK">Work</a></li>
                         <li><a href="#FUN">fun</a></li>
@@ -97,7 +105,6 @@
 	                    </div>
 	                </div>
 	            </div>  
-
 	        </div>  
 	    </section>         
     </header>
@@ -107,7 +114,7 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <div class="about_title"> 
-                        <h1><strong>Skills</strong></h1>
+                        <h1>Skills</h1>
                         <img src="images/bg_border.png" alt="">
                         <h4>Mobile first, responsive web development and design</h4>
 
@@ -158,23 +165,20 @@
                     
                 </div>
                 <div class="col-md-6  wow fadeInRight pull-right animated">
-                    <p class="text-justify">My background as a chef may seem like an unlikely transition to web dev, but I find a lot of similarities in the work. 
+                    <p class="text-justify">
+                    One of the greatest strengths of being a developer with a chef background is being able to cross-utilize my skills:
                     <br>
-                    One of the greatest strengths of being a developer with a chef background is :
-                    <br>
-                    --Always learning since the industry changes rapidly<br>--Both need solid understanding of the fundimentals while always exploring new techniques and trends<br>--Attention to detail will make or break your day<br>--And after hours of research and planning, you end up with a beautifully crafted product for people to enjoy</p>
+                    --Both careers require constant learning &amp; flexibility in a rapidly changing industry<br>--Both need solid understanding of the fundimentals while always exploring new techniques and trends<br>--Attention to detail will make or break your day<br>--And after hours of research and planning, you end up with a beautifully crafted product for people to enjoy</p>
                 </div>
             </div>
         </div>
     </section> 
-
    
     <section class="work_area" id="WORK">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
                     <div class="work_title  wow fadeInUp animated">
-                       
                         <h1>MY WORK</h1>
                         <img src="images/bg_border.png" alt="">
                         <p>I've thoroughly enjoyed each of these projects, but there will always be a special place in my <i class="icon fa fa-heart"></i> for restaurant &amp; food collaborations because of my background as a chef.</p>
@@ -255,9 +259,9 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <div class="about_title">  
-                        <h1><strong>off the internets...</strong></h1>
+                        <h1>off the internets...</h1>
                         <img src="images/bg_border.png" alt="">
-                        <h4>I'll be enjoying some combination of the following</h4>
+                        <h4>you will find me enjoying some combination of the following</h4>
                     </div>
                 </div>
             </div>
@@ -314,7 +318,7 @@
                             </div>
                             <div class="col-md-6">
                                 <textarea class="form-control" name="message" id="message" rows="25" cols="10" placeholder="  Message..."></textarea>   
-                                <button type="button" class="btn btn-default submit-btn form_submit"><a href="mailto:maxwellveronica1@gmail.com" class="btn btn-default submit-btn form_submit"></a></button>                              
+                                <button type="button" class="btn btn-default submit-btn form_submit"><a href="mailto:maxwellveronica1@gmail.com" class="btn submit-btn form_submit">Send</a></button>                              
                             </div>
                         </div>
                     </form>
