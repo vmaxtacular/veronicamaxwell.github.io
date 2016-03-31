@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Veronica M. Maxwell | Web Developer</title>
+    
     <!-- Google Font -->
     <link href='https://fonts.googleapis.com/css?family=Josefin+Sans|Quicksand|Questrial' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Dancing+Script:400,700' rel='stylesheet' type='text/css'>
+    
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -53,7 +56,7 @@
 	              <div class="container">
 	                <!-- Brand and toggle get grouped for better mobile display -->
 	                <div class="navbar-header">
-	                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".bs-example-navbar-collapse-1">
 	                    <span class="sr-only">Toggle navigation</span>
 	                    <span class="icon-bar"></span>
 	                    <span class="icon-bar"></span>
@@ -65,7 +68,7 @@
                     <script type="text/javascript">
                         $(document).on('click','.navbar-collapse.in',function(e) {
                             if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
-                        $(this).collapse('hide');
+                        			$(this).collapse('hide');
                             }
                         });
 
@@ -73,7 +76,7 @@
 
 	                <!-- Collect the nav links, forms, and other content for toggling -->
 	                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	                  <ul class="nav navbar-nav navbar-right">
+	                  <ul class=" nav navbar-nav navbar-right">
 	                    <li><a href="#HOME">Home</a></li>
 	                    <li><a href="#SERVICES">Skills</a></li>
 	                    <li><a href="#WORK">Work</a></li>
@@ -88,7 +91,7 @@
 	                <div class="row">
 	                    <div class="col-md-12 text-center">
 	                        <div class="home_text wow fadeInUp animated pull-right">
-	                            <h2>Hi, I'm <span style="color: #F7882F;">Veronica</span></h2>
+	                            <h2>Hi, I'm <span id="myName">Veronica</span></h2>
 	                            <p><strong>Just another professional chef turned web developer</strong></p>
 	                            <img src="images/bg_border.png" alt="">
 	                        </div>
@@ -166,9 +169,10 @@
                 </div>
                 <div class="col-md-6  wow fadeInRight pull-right animated">
                     <p class="text-justify">
-                    One of the greatest strengths of being a developer with a chef background is being able to cross-utilize my skills:
+                    Being a developer with a chef background gives me the opportunity to cross-utilize a variety of skills: 
                     <br>
-                    --Both careers require constant learning &amp; flexibility in a rapidly changing industry<br>--Both need solid understanding of the fundimentals while always exploring new techniques and trends<br>--Attention to detail will make or break your day<br>--And after hours of research and planning, you end up with a beautifully crafted product for people to enjoy</p>
+                    <br>
+                    <span class="fa fa-plus"></span> Flexibility in a rapidly changing industry<br><span class="fa fa-plus"></span> Solid understanding of the fundimentals <br><span class="fa fa-plus"></span> Exploring new techniques and trends<br><span class="fa fa-plus"></span> Attention to detail<br><span class="fa fa-plus"></span> Craft beautiful and functional products </p>
                 </div>
             </div>
         </div>
@@ -181,7 +185,7 @@
                     <div class="work_title  wow fadeInUp animated">
                         <h1>MY WORK</h1>
                         <img src="images/bg_border.png" alt="">
-                        <p>I've thoroughly enjoyed each of these projects, but there will always be a special place in my <i class="icon fa fa-heart"></i> for restaurant &amp; food collaborations because of my background as a chef.</p>
+                        <p>I've thoroughly enjoyed each of these projects, but there will always be a special place in my <i class="icon fa fa-heart-o"></i> for restaurant &amp; food collaborations because of my background as a chef.</p>
                     </div>
                 </div>
             </div>
@@ -203,7 +207,7 @@
                         <img src="images/kimchi-2.jpg" alt="">
                         <div class="image_overlay">
                             <a href="">VIEW</a>
-                            <h2>Responsive Redesign</h2>
+                            <h2>Responsive Re-design</h2>
                             <h3>coming soon</h3>
                         </div>                        
                     </div>
@@ -235,7 +239,7 @@
                         <img src="images/tangerines-2.jpg" alt="">
                         <div class="image_overlay">
                             <a href="">VIEW</a>
-                            <h2>Responsive Redesign</h2>
+                            <h2>Responsive Re-design</h2>
                             <h3>coming soon</h3>
                         </div>                        
                     </div>
@@ -298,7 +302,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <div class="contact_title  wow fadeInLeft animated">
+                    <div class="contact_title  wow fadeInUp animated">
                         <h1>let's chat</h1>
                         <img src="images/bg_border.png" alt="">
                         <p>If you would like to discuss working together, feel free to reach out. I am based in Hong Kong, but remote is a-okay for me. And I'm always up for meeting other devs in the area.</p>
@@ -308,20 +312,8 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-12  wow fadeInLeft animated">
-                    <form class="contact-form" role="form" action="" method="post">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Name">   
-                                <input type="email" class="form-control" id="email" name="email"placeholder="Email">
-                                <input type="text"  class="form-control" id="subject" name="subject" placeholder="Subject">                                
-                            </div>
-                            <div class="col-md-6">
-                                <textarea class="form-control" name="message" id="message" rows="25" cols="10" placeholder="  Message..."></textarea>   
-                                <button type="button" class="btn btn-default submit-btn form_submit"><a href="mailto:maxwellveronica1@gmail.com" class="btn submit-btn form_submit">Send</a></button>                              
-                            </div>
-                        </div>
-                    </form>
+                <div class="col-md-12 text-center  wow fadeInUp animated">
+                    <button id="submit" type="button" class="btn btn-default submit-btn form_submit"><a href="mailto:maxwellveronica1@gmail.com" class="btn submit-btn form_submit"><span class="icon fa fa-paper-plane"></span> Drop me a line</a></button>                              
                 </div>
             </div>
         </div> 
@@ -332,14 +324,14 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-12 text-center   wow fadeInUp animated">
+                <div class="col-md-12 text-center wow fadeInUp animated">
                     <div class="social">
                         <h2>Other places to find me</h2>
                         <ul class="icon_list">
-                            <li id="linkedin"><a href="https://hk.linkedin.com/in/veronicamaxwell" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
-                            <li id="github"><a href="https://github.com/vmaxtacular" target="_blank"><i class="fa fa-github-alt fa-2x"></i></a></li>
-                            <li id="twitter"><a href="https://twitter.com/vmaxtacular" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
-                            <li id="codepen"><a href="http://codepen.io/vmaxtacular/" target="_blank"><i class="fa fa-codepen fa-2x"></i></a></li>
+                            <li id="linkedin"><a href="https://hk.linkedin.com/in/veronicamaxwell" target="_blank"><i class="fa fa-linkedin fa-3x"></i></a></li>
+                            <li id="github"><a href="https://github.com/vmaxtacular" target="_blank"><i class="fa fa-github-alt fa-3x"></i></a></li>
+                            <li id="twitter"><a href="https://twitter.com/vmaxtacular" target="_blank"><i class="fa fa-twitter fa-3x"></i></a></li>
+                            <li id="codepen"><a href="http://codepen.io/vmaxtacular/" target="_blank"><i class="fa fa-codepen fa-3x"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -347,11 +339,12 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-12 text-pull-left">
-                    <div class="copyright_text   wow fadeInUp animated">
-                        <p>&copy; 2016 | Made with <img src="images/39.png"> &amp; <img src="images/82.png"></p>
+                <div class="col-md-6 text-pull-left">
+                    <div class="copyright_text   wow fadeInLeft animated">
+                        <p>&copy; 2016 | Made with <img src="images/39.png"> &amp; <img src="images/82.png">
+                        </p>
                     </div>
-                </div>
+                </div>    
             </div>
         </div>
     </footer>
