@@ -258,7 +258,7 @@ section.contact{
 
 #submit{
 	height: 75px;
-	width: 350px;
+	width: 400px;
 	position: center;
 	margin-bottom: 50px;
 	background: #FA8231;
@@ -270,7 +270,7 @@ section.contact{
 
 .form_submit a{
 	text-decoration: none;
-	text-transform: uppercase;
+	text-transform: none;
 	font-size: 25px;
 	color: #fff;
 }
