@@ -34,6 +34,7 @@ h1 {
 }
 .navbar-default .navbar-nav>li>a:hover{
 	color: #FA8231;
+	transition: 0.3s ease all;
 }
 
 header{
@@ -166,7 +167,7 @@ header{
 .single_image{
 	margin-left: 3px;
 	position: relative;
-	transition: all 1s;
+	transition: 1s ease all;
 }
 
 .single_image img{
@@ -187,7 +188,7 @@ header{
 	left: 0;
 	top: 0;
 	opacity: 0;
-	transition: all .5s;	
+	transition: 0.3s ease all;	
 }
 
 .image_overlay a{
@@ -265,7 +266,7 @@ section.contact{
 	color: #fff;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	transition: all .5s;	
+	transition: 0.3s ease all;	
 }
 
 .form_submit a{
@@ -315,7 +316,7 @@ ul.icon_list li a{
 	height: 30px;
 	text-align: center;
 	line-height: 28px;
-	transition: all 1s;
+	transition: 0.3s ease all;
 }
 ul.icon_list li a:hover{
 	color: #FA8231;
